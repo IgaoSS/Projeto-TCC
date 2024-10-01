@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!---//****************************************
+        HH    HH  EEEEEEEE  AAAAAAAA  DDDDDD
+        HH    HH  EE        AA    AA  DD    DD
+        HHHHHHHH  EEEEEEEE  AAAAAAAA  DD    DD
+        HH    HH  EE        AA    AA  DD    DD
+        HH    HH  EEEEEEEE  AA    AA  DDDDDD
+    *****************************************//--->
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Fotoblog</title>
+        
+        <link rel="stylesheet" href="./estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <!---//****************************************
+        BBBBBB      OOOO    DDDDDD    YY    YY
+        BB    BB  OO    OO  DD    DD  YY    YY
+        BBBBBB    OO    OO  DD    DD  YYYYYYYY
+        BB    BB  OO    OO  DD    DD     YY
+        BBBBBB      OOOO    DDDDDD       YY
+    *****************************************//--->
+    <body>
+        <div id="app">
+            <!---// [HEADER] //--->
+            <header class="container">
+                <nav>
+                    <img class="logo" src="images/camera.svg" alt="Imagem de uma câmera">
+
+                    <ul>
+                        <li>Home</li>
+                        <li class="active">Galeria1</li>
+                    </ul>
+                </nav>
+
+                <form>
+                    <div class="input-wrapper">
+                        <label for="txtSearch">Pesquise por imagens e coleções</label>
+                        <input id="txtSearch" type="text" placeholder="Pesquise por imagens e coleções">
+                    </div>
+                </form>
+
+                <img class="avatar" src="images/deadpool_avatar.png" alt="Imagem do avatar do perfil">
+            </header>
+            
+            <!---// [MAIN] //--->
+            <main>
+                <div class="container">
+                    <section class="main-content">
+                        <img src="./images/background.jpg" alt="Imagem Fullscreen">
+                        <div class="overlay">
+                            <h2>Texto sobre a Imagem</h2>
+                            <button>Clique Aqui</button>
+                        </div>
+                    </section>
+
+                    <section class="categories">
+                        <h2>Categorias</h2>
+
+                        <div class="gallery">
+                            <figure class="item">
+                                <img src="./images/img1.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+
+                            <figure class="item">
+                                <img src="./images/img2.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+
+                            <figure class="item">
+                                <img src="./images/img3.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+
+                            <figure class="item">
+                                <img src="./images/img4.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+
+                            <figure class="item">
+                                <img src="./images/img5.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+
+                            <figure class="item">
+                                <img src="./images/img6.png" alt="Imagem de uma mesa de trabalho com notebook">
+                                <p>Teste</p>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="top-products">
+                        <h2>Categorias</h2>
+
+                        <div class="list-products">
+                            <div class="product">
+                                <div class="wrap-img">
+                                    <button class="wishlist"><i class="ph ph-heart"></i></button>
+                                    <img src="https://cdn.prod.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png" alt="">
+                                </div>
+
+                                <div class="wrap-info-product">
+                                    <div class="title-product">
+                                        <h2>Nome do Produto</h2>
+                                        <h2>R$ 100,00</h2>
+                                    </div>
+
+                                    <div class="description-product">
+                                        <span>Descrição do produto</span>
+                                    </div>
+
+                                    <div class="rating-product">
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                    </div>
+
+                                    <div class="add-cart">
+                                        <button class="btn-add-cart">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="wrap-img">
+                                    <button class="wishlist"><i class="ph ph-heart"></i></button>
+                                    <img src="https://cdn.prod.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png" alt="">
+                                </div>
+
+                                <div class="wrap-info-product">
+                                    <div class="title-product">
+                                        <h2>Nome do Produto</h2>
+                                        <h2>R$ 100,00</h2>
+                                    </div>
+
+                                    <div class="description-product">
+                                        <span>Descrição do produto</span>
+                                    </div>
+
+                                    <div class="rating-product">
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                    </div>
+
+                                    <div class="add-cart">
+                                        <button class="btn-add-cart">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="wrap-img">
+                                    <button class="wishlist"><i class="ph ph-heart"></i></button>
+                                    <img src="https://cdn.prod.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png" alt="">
+                                </div>
+
+                                <div class="wrap-info-product">
+                                    <div class="title-product">
+                                        <h2>Nome do Produto</h2>
+                                        <h2>R$ 100,00</h2>
+                                    </div>
+
+                                    <div class="description-product">
+                                        <span>Descrição do produto</span>
+                                    </div>
+
+                                    <div class="rating-product">
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                    </div>
+
+                                    <div class="add-cart">
+                                        <button class="btn-add-cart">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
