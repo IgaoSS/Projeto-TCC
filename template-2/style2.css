@@ -28,6 +28,7 @@ html, body, input, button{
     transition: 0.5s;
     cursor: pointer;
     font-size: 1.5rem;
+    font-weight: bold;
 
     &:hover{
         background-color: #FFF;
@@ -62,38 +63,51 @@ main{
             display: flex;
             flex-direction: column;
             gap: 4rem;
-            align-items: flex-start;
-            justify-content: center;
-            padding-left: 4rem;
-
-            & h1, p{
-                color: #FFF;
-            }
+            align-items: center;
+            text-align: center;
+            padding: 5rem 5rem 0;
+            color: #FFF;
 
             & h1{
-                font-size: 6rem;
+                font-size: 4rem;
+                line-height: 4rem;
             }
 
             & p{
                 font-size: 2.5rem;
             }
+        }
 
+        & .animated-div{
+            position: absolute;
+            bottom: 0;
+            background-color: #1D74D7;
+            padding: 2rem 1rem;
+            display: flex;
+            width: max-content;
 
+            & span{
+                color: #FFF;
+                font-size: 2.2rem;
+                animation: divAnimated 4s infinite linear;
+                padding-left: 1rem;
+            }
         }
     }
 
-    /*--------- SECTION 2 - PRODUCTS ---------*/
+    /*--------- SECTION 2 - NEW PRODUCTS ---------*/
     & .new-products{
         margin-top: 5rem;
+        padding-inline: 2.5rem;
 
         & .list-new-products{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             margin-top: 2rem;
 
             & .wrap-product{
-                border-radius: .8rem;
+                border-radius: 2rem;
                 display: grid;
                 gap: 1rem;
                 border: 1px solid rgba(149, 157, 165, 0.2);
@@ -128,23 +142,187 @@ main{
                 }
 
                 & span{
-                    font-size: 1.3rem;
+                    font-size: 1.4rem;
+
+                    
+                }
+
+                & .rating{
+                    display: flex;
+                    align-items: end;
+                    gap: .5rem;
+
+                    & i{
+                        color: #1D74D7;
+                        font-size: 2rem;
+                    }
                 }
             }
         }
     }
 
-
+    /*--------- SECTION 3 - PRODUCTS CATEGORIES ---------*/
     & .product-categories{
         margin-top: 5rem;
+        padding-inline: 2.5rem;
 
         & .list-categories{
-            border: 1px solid;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            
+            & .category{
+                width: 100%;
+                height: 20rem;
+                overflow: hidden;
+                position: relative;
+                border-radius: 2rem;
+                
+                & img{
+                    object-fit: cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 55%;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+                
+                & .infos-category{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFF;
+                    justify-content: space-around;
 
+                    & h3{
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
     }
 
+    /*--------- SECTION 3 - PRODUCTS SPOTLIGHT ---------*/
+    & .product-spotlight{
+        margin-top: 5rem;
+        padding-inline: 2.5rem;
 
+        & .list-spotlight{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            
+            & .spotlight{
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                border-radius: 2rem;
+                
+                & img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                & .infos-spotlight{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFF;
+                    justify-content: space-between;
+                    padding: 3rem 8rem;
+
+                    & h3{
+                        font-size: 2rem;
+                        display: grid;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------- SECTION 5 - REVIEWS ---------*/ 
+    & .grid-reviews{
+        margin-top: 5rem;
+        padding-inline: 2.5rem;
+        display: grid;
+        gap: 2rem;
+
+        & .results-review{
+            background-color: #1D74D7;
+            border-radius: 2rem;
+            padding: 3rem 2rem;
+            color: #FFF;
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            & p{
+                font-size: 2rem;
+                display: grid;
+                gap: .5rem;
+            }
+
+            & h3{
+                font-size: 2.5rem;
+            }
+        }
+
+        & .list-feedbacks{
+            display: grid;
+            gap: 2rem;
+
+            & .feedback{
+                border-radius: 2rem;
+                border: 1px solid rgba(149, 157, 165, 0.2);
+                font-size: 2rem;
+                padding: 3rem 2rem;
+                display: grid;
+                gap: 1.5rem;
+
+                & .user-review{
+                    background-color: #1D74D7;
+                    width: max-content;
+                    padding: .5rem 2rem;
+                    color: #FFF;
+                    border-radius: 3rem;
+                    font-size: 1.8rem;
+                }
+
+                & .text-feedback{
+                    font-weight: bold;
+                }
+
+                & .author-feedback{
+                    font-weight: bold;
+                    color: #747279;
+                }
+            }
+        }
+    }
+}
+
+/* ANIMATIONS
+---------------------------------------*/
+@keyframes divAnimated {
+    to{
+        transform: translateX(-100%);
+    }
+    
 }
