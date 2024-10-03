@@ -579,26 +579,26 @@ header{
     bottom: -10px;
 }
   
-input {
+.chk-hamburguer {
     display: none;
 }
 
 /* rotação dos elementos do span */
-input:checked ~ label .hamburguer {
+.chk-hamburguer:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburguer:before {
+.chk-hamburguer:checked ~ label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
 }
   
-input:checked ~ label .hamburguer:after {
+.chk-hamburguer:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 }
 
-input:checked ~ .menu-hamburguer-elements{
+.chk-hamburguer:checked ~ .menu-hamburguer-elements{
     left: 0;
 }
 
@@ -614,13 +614,12 @@ input:checked ~ .menu-hamburguer-elements{
     }
     
     .menu-hamburger{
-        display: flex;
-        width: auto;
-        flex-direction: column;
-        align-self: flex-start;
+        display: grid !important;
+        grid-template-columns: max-content 1fr;
         overflow: auto;
         z-index: 1;
-        color: white
+        color: #FFF;
+        align-items: center;
     }
 
     .menu-hamburguer-elements{
