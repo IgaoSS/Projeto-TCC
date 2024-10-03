@@ -9,139 +9,156 @@
         
         <title>E-commerce</title>
         
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./src/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
         <!--- <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet"> --->
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+        <script src="./src/script.js" defer></script>
     </head>
 
     <body>
         <!---// HEADER //--->
         <header>
-            <section>
+            <nav class="navbar-main">
                 <h1>FIER</h1>
+                
+                <input id="chkHamburguer" class="chk-hamburguer" type="checkbox" />
+                <label for="chkHamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+    
+                <ul class="list-elements show">
+                    <li><a href="#">Mobile & Wearable Tech</a></li>
+                    <li><a href="#">Drones & Cameras</a></li>
+                    <li><a href="#">Headphones & Speakers</a></li>
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">TV & Home Cinema</a></li>
+                </ul>
 
-                <nav>
-                    <ul>
-                        <li>Mobile & Wearable Tech</li>
-                        <li>Drones & Cameras</li>
-                        <li>Headphones & Speakers</li>
-                        <li>Computers</li>
-                        <li>Tablets</li>
-                        <li>TV & Home Cinema</li>
-                    </ul>
-                </nav>
-
-                <div class="wrap-search">
-                    <input type="text" placeholder="Search..."/>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." class="txt-search">
                 </div>
 
                 <div class="users-info">
-                    <a href="##">
-                        <i class="ph-thin ph-user-circle"></i> Login
-                    </a>
-
-                    <a href="##">
-                        <i class="ph-thin ph-heart"></i>
-                    </a>
-
-                    <a href="##">
-                        <i class="ph-thin ph-shopping-cart-simple"></i>
-                    </a>
+                    <a href="##"><i class="ph-thin ph-user-circle"></i></a>
+                    <a href="##"><i class="ph-thin ph-heart"></i></a>
+                    <a href="##"><i class="ph-thin ph-shopping-cart-simple"></i></a>
                 </div>
-            </section>
+            </nav>
         </header>
 
         <!---// MAIN //--->
-        <main>
-            <!--- FIRST SECTION --->
-            <section class="home">
-                <img src="./images/home.png" alt="Imagem de um celular, relógio e caixinha de som">
-
-                <div class="infos-home">
-                    <h1>SHOP THE TOP<br>BRAND ELECTRONIC</h1>
-                    <p>Get more for your money with every purchase!</p>
-                    <button class="btn-primary">Shop Now</button>
-                </div>
-            </section>
-
-            <!--- NEW PRODUCTS --->
-            <section class="new-products">
-                <h1 class="title">New Products</h1>
-
-                <div class="list-new-products">
-                    <div class="wrap-product">
-                        <div class="product-img">
-                            <img src="./images/produto1.png" alt="Imagem de uma caixinha de bluetooth">
-                        </div>
-                        
-                        <div class="product-info">
-                            <p>Round Mini Portable Bluetooth Speaker</p>
-                            <span>$ 85.00</span>
-                        </div>
-                    </div>
-
-                    <div class="wrap-product">
-                        <div class="product-img">
-                            <img src="./images/produto2.png" alt="Imagem de uma caixinha de bluetooth">
-                        </div>
-
-                        <div class="product-info">
-                            <p>OVE Light Space 5G, 128GB</p>
-                            <span>$ 85.00</span>
-                        </div>
-                    </div>
-
-                    <div class="wrap-product">
-                        <div class="product-img">
-                            <img src="./images/produto3.png" alt="Imagem de uma caixinha de bluetooth">
-                        </div>
-
-                        <div class="product-info">
-                            <p>Round Mini Portable Bluetooth Speaker</p>
-                            <span>$ 85.00</span>
-                        </div>
-                    </div>
-
-                    <div class="wrap-product">
-                        <div class="product-img">
-                            <img src="./images/produto4.png" alt="Imagem de uma caixinha de bluetooth">
-                        </div>
-                        
-                        <div class="product-info">
-                            <p>Round Mini Portable Bluetooth Speaker</p>
-                            <span>$ 85.00</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--- PRODUCTS CATEGORIES --->
-            <section class="product-categories">
-                <h1 class="title">Shop By Category</h1>
-
-                <div class="list-categories">
-                    <div class="category">
-                        
-                        <div class="infos-category">
-                            <h3>Mobile and Wearable Tech</h3>
-                            <button class="btn-primary">Shop Now</button>
-                        </div>
-                    </div>
-
-                    <div class="category">
-                        <div class="infos-category">
-                            <h3>Mobile and Wearable Tech</h3>
-                            <button class="btn-primary">Shop Now</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="main-content"></main>
 
         <!---// FOOTER //--->
         <footer>
+            <div class="subscribe">
+                <div class="grid-text">
+                    <h2>FIER</h2>
 
+                    <p>
+                        This is the space to introduce visitors to the business or brand. 
+                        Briefly explain who's behind it, what it does and what makes it unique. 
+                        Share its core values and what this site has to offer.
+                    </p>
+                </div>
+                
+                <div class="wrap-subscribe">
+                    <h2>Subscribe to Our Newsletter</h2>
+
+                    <div class="form">
+                        <label class="form-email">
+                            <span>E-mail *</span>
+                            <input type="email"/>
+                        </label>
+                        
+                        <label class="form-checkbox">
+                            <input type="checkbox">
+                            Yes, subscribe me to your newsletter
+                        </label>
+                        
+                        <button class="btn-second">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="business-information">
+                <section class="wrap-navs-footer">
+                    <h2>Shop</h2>
+
+                    <nav>
+                        <ul>
+                            <li><a href="##">Mobile & Wearable Tech</a></li>
+                            <li><a href="##">Drones & Cameras</a></li>
+                            <li><a href="##">Headphones & Speakers</a></li>
+                            <li><a href="##">Computers</a></li>
+                            <li><a href="##">Tablets</a></li>
+                            <li><a href="##">TV & Home Cinema</a></span></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="wrap-navs-footer">
+                    <h2>Legal</h2>
+
+                    <nav>
+                        <ul>
+                            <li><a href="##">Terms & Conditions</a></li>
+                            <li><a href="##">Privacy Policy</a></li>
+                            <li><a href="##">Shipping Policy</a></li>
+                            <li><a href="##">Refund Policy</a></li>
+                            <li><a href="##">Accessibility Statement</a></li>
+                            <li><a href="##">FAQ</a></span></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="wrap-navs-footer">
+                    <h2>Headquarters</h2>
+
+                    <nav>
+                        <ul>
+                            <li><a href="##">500 Terry Francine Street</a></li>
+                            <li><a href="##">San Francisco, CA 94158</a></li>
+                            <li><a href="##">info@mysite.com</a></li>
+                            <li><a href="##">123-456-7890</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="wrap-navs-footer">
+                    <h2>Socials</h2>
+
+                    <nav>
+                        <ul>
+                            <li><a href="##">TikTok</a></li>
+                            <li><a href="##">Instagram</a></li>
+                            <li><a href="##">Facebook</a></li>
+                            <li><a href="##">YouTube</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+
+            <div class="last-infos">
+                <div class="payments-information">
+                    <span>Pay Securely with</span>
+    
+                    <div class="wrap-img-payments">
+                        <img src="./images/Visa.png">
+                        <img src="./images/mastercard.png">
+                        <img src="./images/paypal.png">
+                    </div>
+                </div>
+    
+                <div class="copyright">
+                    <span>Copyright © 2035 - FIER Todos os direitos reservados</span>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
