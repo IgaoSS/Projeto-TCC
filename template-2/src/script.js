@@ -27,4 +27,5 @@ class PageLoader {
 }
 
 const pageLoader = new PageLoader();
-pageLoader.loadContent('pages/home');
+//pageLoader.loadContent('pages/home');
+pageLoader.loadContent('pages/product');

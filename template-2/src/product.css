@@ -1,0 +1,17 @@
+.path-product{
+    display: flex;
+    margin-top: 5rem;
+    padding-inline: 2.5rem;
+    gap: 1rem;
+
+    & span{
+        font-size: 1.3rem;
+    }
+
+    & .current-product{
+        border-bottom: 1px solid #000;
+        font-style: italic;
+        padding-bottom: 1px;
+        cursor: pointer;
+    }
+}
