@@ -18,17 +18,18 @@ html, body, input, button{
 
 /* GERAL
 ---------------------------------------*/
-.btn-primary{
-    width: max-content;
+.btn{
     border: none;
-    padding: 1.5rem 4rem;
+    padding: 1.2rem 4rem;
     border-radius: 3rem;
-    background-color: #1D74D7;
-    color: #FFF;
     transition: 0.5s;
     cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.btn-primary{
+    background-color: #1D74D7;
+    color: #FFF;
 
     &:hover{
         background-color: #FFF;
@@ -37,14 +38,9 @@ html, body, input, button{
 }
 
 .btn-second{
-    width: 100%;
-    border: none;
     background: none;
     border: 1px solid #FFF;
-    padding: 1.5rem 1rem;
-    border-radius: 3rem;
     color: #FFF;
-    font-size: 2rem;
 
     &:hover{
         background-color: #FFF;
@@ -53,26 +49,16 @@ html, body, input, button{
     }
 }
 
-.btn-primary{
-    width: max-content;
-    border: none;
-    padding: 1.5rem 4rem;
-    border-radius: 3rem;
-    background-color: #1D74D7;
-    color: #FFF;
-    transition: 0.5s;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: bold;
+.btn-third{
+    background: #FFF;
+    border: 1px solid #1D74D7;
+    color: #1D74D7;
 
     &:hover{
-        background-color: #FFF;
-        color: #1D74D7;
+        background-color: #1D74D7;
+        border: none;
+        color: #FFF;
     }
-}
-
-.btn-small{
-    width: max-content;
 }
 
 .btn-large{
@@ -82,6 +68,8 @@ html, body, input, button{
 .title{
     font-size: 3.5rem;
 }
+
+
 
 /* HEADER
 ---------------------------------------*/
@@ -543,11 +531,11 @@ footer{
             gap: 2rem;
 
             & h2{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             & p{
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 text-align: justify;
             }
         }
@@ -558,13 +546,13 @@ footer{
             color: #FFF;
 
             & h2{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             & .form{
                 display: grid;
                 gap: 4rem;
-                font-size: 1.8rem;
+                font-size: 1.4rem;
 
                 & .form-email{
                     display: grid;
@@ -574,7 +562,7 @@ footer{
                         border: none;
                         border-bottom: 1px solid #FFF;
                         height: 4rem;
-                        font-size: 1.8rem;
+                        font-size: 1.4rem;
                         color: #FFF;
                         
                         &:focus {
@@ -608,7 +596,7 @@ footer{
             gap: 2rem;
 
             & h2{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             & nav ul li{
@@ -619,7 +607,7 @@ footer{
                 & a{
                     text-decoration: none;
                     color: #FFF;
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -639,7 +627,7 @@ footer{
         }
         
         & span{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: #FFF;
         }
     }
