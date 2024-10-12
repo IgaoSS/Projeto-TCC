@@ -272,6 +272,7 @@
     .path-product{
         padding-inline: 15rem;
     }
+
     .product-container{
         grid-template: 
         "A B" max-content

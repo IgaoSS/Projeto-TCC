@@ -1,0 +1,155 @@
+.search-products-container{
+    padding-inline: 2.5rem;
+    display: grid;
+
+    & h2{
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: lighter;
+        margin-block: 2rem;
+    }
+
+    & .search-content{
+        & .filter-container{
+            display: none;
+        }
+
+        & .list-products-container{
+            & .products-total{
+                font-size: 1.2rem;
+            }
+
+            & .products-list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 2rem;
+
+                & .wrap-product{
+                    border-radius: 2rem;
+                    display: grid;
+                    gap: 1rem;
+                    border: 1px solid rgba(149, 157, 165, 0.2);
+                    
+                    & .product-img{
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+
+                        & img{
+                            object-fit: cover;
+                            width: 70%;
+                            margin: 0 auto;
+                            transition: 0.5s;
+                            cursor: pointer;
+
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    
+                    & .product-info{
+                        padding: 2rem 1rem;
+                        display: grid;
+                        gap: 1rem;
+                    }
+
+                    & p{
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                    }
+
+                    & span{
+                        font-size: 1.4rem;
+
+                        
+                    }
+
+                    & .rating{
+                        display: flex;
+                        align-items: end;
+                        gap: .5rem;
+
+                        & i{
+                            color: #1D74D7;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 800px){
+    .path-product{
+        padding-inline: 2.5rem;
+    }
+
+    .search-content{
+        display: grid;
+        grid-template-columns: 15% 85%;
+
+        & .filter-container{
+            display: grid !important;
+            height: max-content;
+            gap: 2rem;
+
+            & .wrap-filter{
+                display: grid;
+                gap: 1rem;
+
+                & h3{
+                    font-size: 1.8rem;
+                    border-bottom: 1px solid #c9c9c9;
+                    padding-bottom: 1rem;
+                }
+
+                & .list-items{
+                    display: grid;
+                    gap: .5rem;
+
+                    & span{
+                        font-size: 1.3rem;
+                    }
+
+                    & label{
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        cursor: pointer;
+                    }
+                }
+
+                & .list-color{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+
+                    & p{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 50%;
+
+                        &.black{background-color: black;}
+                        &.blue{background-color: blue;}
+                        &.green{background-color: green;}
+                        &.orange{background-color: orange;}
+                        &.purple{background-color: purple;}
+                        &.red{background-color: red;}
+                    }
+                }
+            }
+        }
+    
+        & .list-products-container{
+            padding-left: 5rem;
+
+            & .products-list{
+                grid-template-columns: repeat(4, 1fr) !important;
+            }
+        }
+    }
+}

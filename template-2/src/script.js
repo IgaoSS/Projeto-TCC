@@ -101,4 +101,4 @@ class PageLoader {
 }
 
 const pageLoader = new PageLoader();
-pageLoader.loadContent('pages/product');
+pageLoader.loadContent('pages/list-products');
